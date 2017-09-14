@@ -1,0 +1,13 @@
+{
+  "project":{
+    "projectVersion" : "0.0.1",
+    "sourcePath" : "/Users/rodrigo/workspace/HC-Cancer-Barretos/hc-barretos-first-project/src/"
+  },
+  "cassandraDB":{
+    "keyspace" : "dl_hc_barretos",
+    "nodeIP" : "127.0.0.1"
+  },
+  "csv-file":{
+    "pathfilename" : "/Users/rodrigo/workspace/HC-Cancer-Barretos/hc-barretos-first-project/test/Exames_Realizados_Prevencao_2016_estado_civil.csv"
+  }
+}
