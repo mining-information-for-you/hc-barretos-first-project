@@ -25,8 +25,8 @@ def main():
     obj_exam_done_io = exam_done_io()
 
     obj_exam_done_io.exam_done_csv2Dataframe(sc,csv_file)
-    obj_exam_done_io.get_dataframe_exam_done().show()
-    #p_cassandra.insert_patient_benef(sql, p_io.get_dataframe_benef())
+    #obj_exam_done_io.get_dataframe_exam_done().show()
+    p_cassandra.insert_exam_done(sql, obj_exam_done_io.get_dataframe_exam_done())
 
     p_cassandra.close_connection()
 
