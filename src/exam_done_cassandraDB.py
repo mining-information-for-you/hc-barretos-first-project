@@ -7,6 +7,9 @@ class exam_done_cassandraDB(CommonCassandraDB):
     def __init__(self, nodeIP, keyspace):
         self.set_cassandra_client(nodeIP, keyspace)
 
+    def load_exam_done(self, sqlCtx):
+        return sqlCtx.read.format("org.apache.spark.sql.cassandra").options(table="exame_done", keyspace=self.client.get_keyspace()).load()
+
     def insert_exam_done(self, sqlCtx, df):
         table = self.client.get_keyspace() + "." + "exame_done"
         sql_query = """
