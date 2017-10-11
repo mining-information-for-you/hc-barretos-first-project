@@ -1,5 +1,5 @@
 # hc-barretos-first-project
-This project belongs to HC Barretos project. It is concerned about storing patient data into Cassandra Database fromcsv or json files
+This project belongs to HC Barretos project. It is concerned about storing patient data into Cassandra Database fromcsv or json files.
 
 # Apache Spark
 This project requires Apache Spark 2.0 or higher. See http://spark.apache.org/downloads.html
