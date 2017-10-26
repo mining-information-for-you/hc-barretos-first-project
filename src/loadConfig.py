@@ -12,4 +12,6 @@ def load_source_files(sc, source_files):
     sc.addPyFile(os.path.join(source_files,"loadConfig.py"))
     sc.addPyFile(os.path.join(source_files,"exam_done_io.py"))
     sc.addPyFile(os.path.join(source_files,"exam_done_cassandraDB.py"))
+    sc.addPyFile(os.path.join(source_files,"patient_age.py"))
+
     return sc
